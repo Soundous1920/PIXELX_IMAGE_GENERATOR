@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../bot.gif);
+    background-size:cover;
+    
+    }
+
+main{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/*styling the header*/
+header{
+display: flex;
+justify-content: space-between;
+margin: 25px;
+
+} 
+header img{
+    width: 50px;
+    color: white;
+    margin: 20px;
+    margin-top: 10px;
+    display: inline;
+}
+header h3{
+    color: rgb(201, 13, 218);
+    margin: 20px;
+    font-size: 25px;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 600;
+    border-radius: 7px;
+    padding: 7px;
+    background-color:transparent;
+    width: 250px;
+    text-align: center;
+    transition: 0.5s;
+
+}
+header h3:hover{
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+}
+a{
+    text-decoration: none;
+    color: rgb(58, 8, 60);
+
+}
+
+h2 {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(74, 3, 74);  
+    text-shadow: 0px 0px 20px rgb(246, 246, 246);
+}
+.input{
+    background-color: rgba(255, 255, 255, 0.777);
+    padding: 5px;
+    width: 710px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+    transition: 0.3s;
+    margin: 0px;
+}
+.input:hover{
+    box-shadow: 0 0 10px white;
+}
+.input input{
+    font-family: "Overlock SC", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    width: 80%;
+    height: 97%;
+    border-radius: 7px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.387);
+    outline: none;
+    padding: 7px;
+    font-size: 17px;
+    font-weight: 600;
+    color: grey;
+}
+.input button{
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width:19%;
+    height: 97%;
+    border-radius: 7px;
+    border: none;
+    font-size: 19px;
+    font-weight: 600;
+    background-color: rgba(87, 9, 109, 0.474);
+    cursor: pointer;
+    transition: 0.3s;
+    color: lavender;
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.images div{
+    background-color: rgba(107, 13, 104, 0.225);
+    height: 300px;
+    width: 340px;
+    border-radius:10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+.images div img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.785);
+    border: none;
+    transition: 0.3s;
+}
+.images div img:hover{
+    box-shadow: 0 0 15px whitesmoke;
+
+
+}
+.input button:hover{
+    box-shadow: 0 0  5px rgb(114, 101, 101);
+    background-color: rgba(183, 151, 183, 0.682);}
+
+footer{
+    color: rgb(175, 159, 159);
+    text-align: center;
+    font-size: 19px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+
+
