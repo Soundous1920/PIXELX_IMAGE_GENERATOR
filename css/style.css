@@ -11,7 +11,7 @@ img{
     transition: 0.5s;
 }
 body{
-    background-image: linear-gradient(to right bottom,#07021ff5, rgb(4, 4, 34)70%,rgba(69, 8, 72, 0.968));
+    background-image: linear-gradient(to right bottom,#ffffffb7, rgb(19, 1, 31)70%,rgba(43, 2, 46, 0.968));
     background-position: center;
     background-attachment: fixed;
    
@@ -80,7 +80,9 @@ a button:hover{
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.852);
     cursor: pointer;
 }
-
+img{
+    transition: 0.5s;
+}
 
 /*styling the first section "description" */
 .container{
@@ -95,7 +97,7 @@ a button:hover{
 
 .illustration{
     display: grid;
-    grid-template-columns:370px 390px;
+    grid-template-columns:350px 380px;
     grid-template-rows: 360px 360px;
     gap: 24px;
 }
@@ -108,13 +110,27 @@ a button:hover{
     border-radius: 9px;
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.389);
     border: none;
-    transition: 0.8s;
+    transition: 0.7s;
+}
+.illustration .item1:hover{
+    box-shadow: 0 0 30px rgba(180, 169, 169, 0.843);
+    height: 375px;
+    width: 360px;
+}
+.illustration .item3:hover{
+    box-shadow: 0 0 30px rgba(180, 169, 169, 0.843);
+    height: 375px;
+    width: 360px;
+    margin-right: 10px;
 }
 
-.illustration item2:hover{
-    box-shadow: 0 0 10px rgba(31, 26, 26, 0.51);
-    width:400px;
-    height: 730px;}
+
+.illustration .item2:hover{
+    box-shadow: 0 0 30px rgba(198, 191, 191, 0.51);
+    width:385px;
+    height: 750px;
+    margin-top: 0px;
+}
 .description{
     width: 55%;
     margin-top: 100px;
@@ -132,6 +148,10 @@ a button:hover{
     text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.523);
 
 }
+a{
+    text-decoration: none;
+    color: rgb(66, 2, 66);
+}
 .description p{
     color: rgba(255, 255, 255, 0.78);
     font-size: 25px;
@@ -145,18 +165,23 @@ a button:hover{
      line-height: 37px;
 }
 .tutorial{
-    margin-top: 40px;
+    margin-top: 50px;
     padding-top: 25px;
+    margin-bottom: 300px;
 }
 
 .tutorial h2 {
-    color: white;
+    color: rgb(243, 221, 221);
     text-align: center;
-    font-size: 45px;
+    font-size: 56px;
     margin: 15px;
-    text-shadow:0 0 10px rgba(144, 100, 136, 0.704);
+    margin-top: 120px;
+    text-shadow:10px 10px 200px rgb(246, 242, 246);
     letter-spacing: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 500;
+    font-style: normal;
  }
  .description button{
     width: 250px;
@@ -188,9 +213,92 @@ a button:hover{
     padding-top: 15px;
 }
 .container2 div{
-    background-color: rgb(232, 190, 236);
-    width: 400px;
-    height: 350px;
+    background-color: rgb(239, 212, 241);
+    width: 370px; 
+    height:400px;
+    border-radius: 7px;
+    color: rgb(80, 65, 44);
+    font-size: 19px;
+    font-family: "Overlock SC", sans-serif;
+    font-weight: 700;
+     font-style: normal;
+     transition: 0.5s;
+     box-shadow: 0px 0px 10px rgb(118, 118, 105);
+}
+.container2 div:hover{
+    box-shadow: 0px 0px 20px wheat;
+    width: 380px;
+    height: 410px;
+
+}
+.container2 .item1 p{
+    margin: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.container2 .item1 h2{
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(62, 17, 104);
+    text-shadow: 0px 0px 10px rgb(23, 23, 23);
+}
+.container2 .item2 h2{
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(62, 17, 104);
+    text-shadow: 0px 0px 10px rgb(23, 23, 23);
+}
+.container2 .item2 p{
+    margin: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+.container2 .item2:hover{
+padding:10px;
+}
+    
+
+.container2 .item3 p{
+    margin: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+.container2 .item3 h2{
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(62, 17, 104);
+    text-shadow: 0px 0px 10px rgb(23, 23, 23);
+}
+.container2 .item3 img{
+    margin: 0px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.container2 img{
+    width:97%;
+    height: fit-content;
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 20px black;
+
+    
 }
 .approach{
     color: rgba(240, 248, 255, 0.872);
@@ -288,8 +396,103 @@ a button:hover{
         color: rgb(80, 65, 44);
         text-align: center;
         
+
     }
-    footer{
+    .footer{
+        margin-top: 39px;
+    }
+    
+        .contact{
+            margin-top: 10px;
+            border-radius: 10px;
+            background:#edd2ea6d;
+            backdrop-filter: blur(3000px);
+            color: rgb(109, 107, 108);
+            margin: 30px;
+            padding: 50px;
+            box-shadow: 0 0 15px white ;
+        }
+        .footer h2{
+            color: rgb(74, 72, 73);
+            margin: 0px 10px 50px 40px;
+            font-size: 50px;
+            font-family: "Overlock SC", sans-serif;
+             font-weight: 800;
+             font-style: normal;
+            
+        }
+        .contact label{
+            font-size: 19px;
+            font-family: "Overlock SC", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            color: rgb(74, 72, 73);
+        }
+       .contact input{
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        width: 200px;
+        height: 30px;
+        margin: 40px;
+        background-color: transparent;
+        backdrop-filter: blur(50px);
+        color: rgb(233, 227, 227);
+        padding: 5px;
+        font-size: 14px;
+       }  
+       .contact input::placeholder{
+        color: rgb(66, 63, 64);}
+ 
+       textarea{
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        backdrop-filter: blur(50px);
+        color: rgb(230, 221, 221);
+        font-size: 14px;
+        padding: 15px;
+        margin-top: 20px;
+        height: 250px;
+        width: 90%;
+
+       } 
+       textarea::placeholder{
+        color: rgb(66, 63, 64);
+        font-size: 14px;
+        text-transform: uppercase;
+       }
+       #name{
+        margin-left: 10px;
+       } 
+       #email{
+        margin-left: 60px;
+       }
+        #submit{
+            margin-top: 30px;
+            border-radius: 7px;
+            width: 168px;
+            height: 35px;
+            color: rgb(66, 63, 64);;
+            background-color: white;
+            font-size: 19px;
+            font-weight: 700;
+            transition: 0.5s;
+            display: block;
+            margin-left: 90%;
+            border: none;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.871);
+        }
+        #submit:hover{
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.829);
+            cursor: pointer;
+            background-color: transparent;
+            border: 0.5px solid black;
+            color: white;
+    }
+
+    .copyright{
         color: rgb(175, 159, 159);
         text-align: center;
         font-size: 19px;

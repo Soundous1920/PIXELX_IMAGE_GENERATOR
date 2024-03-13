@@ -1,13 +1,14 @@
-const api="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";
+
 const inp = document.getElementById('inp')
 const images = document.querySelector('.images')
+const api="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";
 const getImage=async () => {
     //make a request to openai
     const methods = {
         method:"POST",
         headers:{
             "Content-Type":"application/json",
-            "Authorization":`Bearer ${api}` },
+            "Authorization":`Bearer ${api}`},
         body:
         JSON.stringify(
             {

@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
     <title>AI image generator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Rubik+Maps&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,29 +18,29 @@
         <nav>
             <a href="#">Home</a>
             <a href="../html/index2.html">Generate</a>
-            <a href="#">Log in </a>
-            <a href="#"><button>Sign in</button></a>
+            <a href="#about">About</a>
+            <a href="login.html"><button>Sign in</button></a>
         </nav>
     </header>
     <main>
         <div class="container">
         <div class="description">
           <h2>Transform <span>Pixels</span> into stunning images with the power of <span>AI.</span></h2> 
-          <p>Discover the power of AI with <span>PixelX</span> your ultimate image generator for mesmerizing pixel art creations.</p>
-          <button >Start Creating</button> 
+          <p>Discover the power of AI with <span>PixelX</span> your ultimate image generator Bot for mesmerizing <br> pixel art creations.Press this buttonTo meet <span>PiXElX</span> , your creative companion !</p>
+          <button><a href="index2.html">Discover PixelX</a></button> 
         </div>
         <div class="illustration">
             <div class="item1">
-                <img src="../illus3.jpg" alt="">
+                <img src="../src/IOR PURPLE.jpg" alt="">
             </div>
             <div class="item2">
-                <img src="../illus2.jpg" alt=""> </div>
+                <img src="../src/Landscape Art Ai Style (1).jpg" alt=""> </div>
             <div class="item3">
-                <img src="../illus4.jpg" alt="">
+                <img src="../src/téléchargement (3).jpg" alt="">
             </div>
         </div>
         </div>
-        <div class="container3">
+        <div class="container3" id="about">
             <div class="flex-item1">
                 <h3 class="approach">CREATIVE APPROACH</h3>
                 <h2 class="design">AI-powered Design</h2>
@@ -73,21 +70,41 @@
             </div>
         </section>
         <section class="tutorial" id="tutorial">
-            <h2>How IT WORKS ?</h2>
+            <h2>HOW IT WORKS ?</h2>
             <div class="container2">
                 <div class="item1">
+                    <h2>STEP ONE</h2>
+                    <img src="../src/capture1.png" alt="">
                     <p>enter a description of the image you want to have ;For better results , be precise in your description</p>
                 </div>
-                <div class="item2"> <p>Click on the GENERATE button;Then wait for few seconds to treat your request.</p>
+                <div class="item2">
+                    <h2>STEP TWO</h2>
+                    <img src="../src/capture2.png" alt=""> <p>Click on the GENERATE button;Then wait for few seconds to treat your request.</p>
                 </div>
                 <div class="item3">
+                    <h2>STEP THREE</h2>
+                    <img src="../src/capture3.png" alt="">
                     <p>Congratulation!</p>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Copyright &copy; 2024 - PixelX</p>
+
+    <footer class="footer">
+        <h2>Contact Us</h2>
+        <div class="contact">
+            <form action="">
+                <label for="name">FULL NAME :</label>
+                <input type="text" id="name" placeholder="Enter your full name"> <br>
+                <label for="name">EMAIL :</label>
+                <input type="text" id="email" placeholder="Enter your email">
+                <br>
+                <label for="">MESSAGE :</label> <br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="enter your message"></textarea>
+                <button id="submit" type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+        <p class="copyright">Copyright &copy; 2024 - PixelX</p>
     </footer>
 </body>
 </html>
