@@ -125,3 +125,17 @@ text-align: center;
 .wrapper .register p a:hover{
     text-decoration: underline;
 }
+.loader{
+    border: 4px solid white;
+    border-radius: 50%;
+    border-top: 4px solid red;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+    
+}
