@@ -11,11 +11,22 @@ img{
     transition: 0.5s;
 }
 body{
-    background-image: linear-gradient(to right bottom,#ffffffb7, rgb(19, 1, 31)70%,rgba(43, 2, 46, 0.968));
-    background-position: center;
-    background-attachment: fixed;
-   
+    background-image: linear-gradient(to right bottom,#999494b7, rgb(21, 4, 33),rgba(65, 5, 57, 0.968));
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
 }
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
 /*styling the header and navbar */
 header h3{
     margin-top:20px ;
@@ -24,8 +35,25 @@ header h3{
     font-family: "Silkscreen", sans-serif;
     font-weight: 400;
     font-style: normal;
-    text-shadow: 0px 0px 8px rgb(163, 127, 197);
-}
+    text-shadow: 0px 0px 15px rgb(18, 16, 21);
+    
+  overflow: hidden;
+  display: inline-block;
+  animation: waveMotion 5s ease-in-out forwards infinite; }
+  @keyframes waveMotion {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-3px);
+    }
+    50% {
+      transform: translateY(3px);
+    }
+    75% {
+      transform: translateY(-3px);
+    }
+  }
 span{
     color: rgba(248, 248, 197, 0.858);
     font-family: "Silkscreen", sans-serif;
@@ -37,6 +65,7 @@ header {
     display: flex;
     justify-content: space-around;
     justify-items:center;
+    flex-wrap: wrap;
 }
 header nav a{
     font-size: 25px;
@@ -51,6 +80,7 @@ header nav a{
     font-style: normal;
     letter-spacing: 3px;
     transition: 0.3s;
+    animation: waveMotion 5s ease-in-out forwards infinite;
     
 }
 header nav a:hover{
@@ -58,6 +88,78 @@ header nav a:hover{
     text-shadow: 0px 0px 8px white;
 
 }
+.user-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px black;
+    animation: waveMotion 5s ease-in-out forwards infinite;
+    
+}
+.usr-info img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.submenuwrapp{
+    
+    margin-left: 1500px;
+    width:320px;
+    overflow: hidden;
+    max-height:0;
+    transition: max-height 0.4s ease-out;
+}
+.user-pic:hover{
+    max-height: 900px;/*show when hovering*/
+    transition: max-height .4s ease-in;
+}
+.submenu{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+.usr-info{
+    display: flex;
+    align-items: center;
+}
+.usr-info h3{ 
+    font-weight: 500;}
+.usr-info img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.submenu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+
+}
+.submenu-link{
+    display: flex;
+    text-decoration: none;
+    margin: 12px ;
+}
+.submenu-link p{
+    width: 100%;
+    transition: 0.5s;
+}
+.arrow{
+    color:purple;
+    transform: 0.5s;
+}
+.submenu-link:hover span{
+    transform: translateX(5px);
+}
+.submenu-link:hover p{
+    font-weight: 600;}
+
 
 a button{
     font-family: "Silkscreen", sans-serif;
@@ -97,9 +199,9 @@ img{
 
 .illustration{
     display: grid;
-    grid-template-columns:350px 380px;
+    grid-template-columns:350px 360px;
     grid-template-rows: 360px 360px;
-    gap: 24px;
+    gap: 4px;
 }
 .item2{
     grid-row:span 2;
@@ -108,43 +210,40 @@ img{
 .illustration div{
     background-color: palevioletred;
     border-radius: 9px;
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.389);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: none;
-    transition: 0.7s;
-}
-.illustration .item1:hover{
-    box-shadow: 0 0 30px rgba(180, 169, 169, 0.843);
-    height: 375px;
-    width: 360px;
-}
-.illustration .item3:hover{
-    box-shadow: 0 0 30px rgba(180, 169, 169, 0.843);
-    height: 375px;
-    width: 360px;
-    margin-right: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
 
 
-.illustration .item2:hover{
-    box-shadow: 0 0 30px rgba(198, 191, 191, 0.51);
-    width:385px;
-    height: 750px;
-    margin-top: 0px;
+.illustration div:hover {
+    transform: scale(1.1);
 }
+
+.illustration div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.illustration div:hover img{
+transform: scale(1.05);}
+
 .description{
-    width: 55%;
-    margin-top: 100px;
+    margin-top: 200px;
+    margin-left: 100px;
 }
 
 .description h2{
     color: rgb(232, 230, 229);
-    font-size: 40px;
+    font-size: 33px;
     text-wrap: wrap;
-    width: 60%;
+    width: 70%;
     font-family: "Overlock SC", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-    margin: 25px 0px 25px 35px;
+    font-weight: 800;
+    font-style: normal;
+    margin: 25px 0px 25px 15px;
     text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.523);
 
 }
@@ -154,20 +253,28 @@ a{
 }
 .description p{
     color: rgba(255, 255, 255, 0.78);
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 90;
     font-family: "Overlock SC", sans-serif;
     font-weight: 700;
-     font-style: normal;
-     text-wrap: wrap;
-     width: 60%;
-     margin: 25px 0px 25px 35px;
-     line-height: 37px;
+    font-style: normal;
+    text-wrap: wrap;
+    width: 65%;
+    margin: 25px 0px 25px 25px;
+    line-height: 37px;
 }
 .tutorial{
     margin-top: 50px;
     padding-top: 25px;
     margin-bottom: 300px;
+}
+.tutorial div{
+    height: 800px;
+    background:#edd2ea6d; 
+     backdrop-filter: blur(3000px);
+    align-items: center;
+    box-shadow: 0 0 7px black;
+
 }
 
 .tutorial h2 {
@@ -223,14 +330,17 @@ a{
     font-weight: 700;
      font-style: normal;
      transition: 0.5s;
-     box-shadow: 0px 0px 10px rgb(118, 118, 105);
+     box-shadow: 0px 0px 10px rgb(10, 10, 7);
+     overflow: hidden;
+     transition: transform 0.1s ease-in-out;
+    
 }
 .container2 div:hover{
-    box-shadow: 0px 0px 20px wheat;
-    width: 380px;
-    height: 410px;
-
+    transform: scale(1.1);
+  box-shadow: 0 0 10px blanchedalmond;
 }
+
+
 .container2 .item1 p{
     margin: 20px;
     line-height: 24px;
@@ -247,8 +357,11 @@ a{
     margin-bottom: 10px;
     color: rgb(62, 17, 104);
     text-shadow: 0px 0px 10px rgb(23, 23, 23);
+    animation: waveMotion 5s ease-in-out infinite;
 }
 .container2 .item2 h2{
+    animation: waveMotion 5s ease-in-out infinite;
+
     margin-top: 30px;
     font-size: 25px;
     font-family: "Silkscreen", sans-serif;
@@ -276,12 +389,13 @@ padding:10px;
 }
 .container2 .item3 h2{
     margin-top: 30px;
+    animation: waveMotion 5s ease-in-out infinite;
     font-size: 25px;
     font-family: "Silkscreen", sans-serif;
     font-weight: 600;
     font-style: normal;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: rgb(62, 17, 104);
     text-shadow: 0px 0px 10px rgb(23, 23, 23);
 }
@@ -364,17 +478,20 @@ padding:10px;
     border-radius: 5px;
     box-shadow: 0px 0px inset 60px rgba(20, 17, 17, 0.89);
     padding: 25px;
-    transition: 0.5s;
+    overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 }
-.benefits div:hover{
-    box-shadow: 0px 0px 10px wheat;
-    width:370px;
-    height:390px;
-    padding:35px;
+
+.benefits div:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px blanchedalmond;
 }
+
+
 
 
 .benefits div h3{
+    animation: waveMotion 5s ease-in-out infinite;
     font-size: 25px;
     font-family: "Silkscreen", sans-serif;
     font-weight: 600;

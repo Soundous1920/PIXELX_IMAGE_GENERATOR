@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Rubik+Maps&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Generate</title>
 </head>
 <body>
   <header>
@@ -19,6 +19,8 @@
   </header>
   <main>
     <h2>Let me conjure your vision into PIXELS</h2>
+    <div id="loader"></div>
+
     <!-- results of images -->
     <div class="images">
       
@@ -27,7 +29,7 @@
      <!-- input -->
      <div class="input">
         <input id="inp" type="text" placeholder="Enter a description of your image" >
-        <button onclick="getImage()">Generate</button>
+        <button onclick="getImage()" id="generateBtn">Generate</button>
     </div>
     </main>
     <footer>
